@@ -1,4 +1,5 @@
-import { Grommet, Heading } from 'grommet';
+import React from 'react'
+import { Grommet, Heading } from 'grommet'
 
 const theme = {
   global: {
@@ -8,14 +9,14 @@ const theme = {
       height: '20px',
     },
   },
-};
-
-function App() {
-  return (
-    <Grommet theme={theme}>
-     <Heading>Oxygen</Heading>
-    </Grommet>
-  );
 }
 
-export default App;
+const App: React.FC = () => {
+  return (
+    <Grommet theme={theme}>
+      <Heading>Oxygen</Heading>
+    </Grommet>
+  )
+}
+
+export default App
